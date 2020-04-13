@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GrandTheftAuto</title>
+<style>
+  body{
+    margin: 0;
+    background-image: url('largeC.jpg');
+  }
+  .top{
+    background-color: black;
+    border:3px solid black;
+  }
+  #header{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('newbac.png');
+    padding: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+  
+  }
+  #menu-button {
+  display: none;
+  padding: 10px;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+  @media (max-width: 600px) {
+    #menu-button{
+      display: flex;
+    background-color: black;
+    }
+    
+
+    #nav{
+    justify-content: center;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 0;
+
+    } 
+  #nav.open {
+    justify-content: center;
+    display: flex;
+  }
+
+  
+  #nav > .np {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  }
+  .intr{
+    flex-wrap: nowrap;
+  }
+  .pic1{
+    display: flex;
+    justify-content: end;
+  }
+
+  .he{
+    padding-top: 10px;
+    font-size: 40px;
+    align-self: flex-start;
+    width: 500px;
+    color: rgb(50, 50, 50);
+    font-family:"impact", Times, serif
+    
+  }
+  .lkh{
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+  }
+  .he:hover{
+    color: orange;
+  }
+
+
+
+  .lk1{
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .lk1:hover {
+    color: white;
+    background-color:orange;
+    /* border-radius: 5px; */
+    }  
+
+
+  .lk2{
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .lk2:hover{
+    background-color: orange;
+    /* border-radius: 5px; */
+  }
+
+
+
+
+  .lk3{
+    padding-left: 20px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .lk3:hover{
+    background-color: orange;
+    /* border-radius: 5px; */
+
+  }
+  
+
+
+
+  #nav{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    padding: 3px;
+    text-align: end;
+    align-items: center;
+    position: relative;
+    right: 0;
+    padding-top: 5px;
+    
+  }
+  .content{
+    border: 0px solid white;
+    margin: 50px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+  }
+  .gam1{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    display: block;
+    flex-direction: column;
+    
+    
+  }
+  .cp1{
+    border-color: rgb(50, 50, 50);
+    display: block;
+  }
+  .cp2{
+    border-color: rgb(50, 50, 50);
+    display: block;
+    
+  }
+  .ctw {
+    margin-top: -4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    display: block;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(50, 50, 50);
+    text-decoration: none;
+
+  }
+  
+  .gt2{
+    margin-top: -4px;
+    padding-top: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    text-decoration: none;
+
+  }
+  .gt3{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -4px;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    background-color: rgb(50, 50, 50);
+  }
+  .gt4{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -4px;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    /* padding: 20px; */
+    background-color: rgb(50, 50, 50);
+  }
+  .gt5{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -4px;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    /* padding: 20px; */
+    background-color: rgb(50, 50, 50);
+  }
+  .gam2{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+    
+  }
+  .gam3{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+  }
+  .gam4{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+  }
+  .gam5{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+  }
+  img{
+    position: relative;
+  }
+  
+</style>
+</head>
+
+
+
+<body>
+<div class="top">
+
+</div>
+<div id="header">
+  <div class="he"> <a class="lkh" href="index1.html"><p1>Find Your Favourite<br>
+       Grand Theft Auto</p1> </a> </div>
+  <p1 class="pic1">
+    <a class="rkt" href="http://www.rockstargames.com
+    "><img class="rkt" src="newa.png" alt="some_text" width="70%"></a>
+    
+  </p1>
+
+</div>
+  <div id="menu-button">
+      <svg viewBox="0 0 100 80" width="30" height="30">
+        <rect fill="white" width="100" height="15"></rect>
+        <rect fill="white" y="30" width="100" height="15"></rect>
+        <rect fill="white" y="60" width="100" height="15"></rect>
+      </svg>
+    </div>
+<div id="nav">
+    <p1 class="np1"><a class="lk1" href="support.html"> Support</a></p1>
+    <p1 class="np2"><a class="lk2" href="contact.html">Contact </a></p1>
+    <p1 class="np3"><a class="lk3" href="resource.html">Resource </a></p1>
+</div>   
+<div class="content">
+  <div class="gam5">
+    <a class="cp5" href="np5.html"><img src="gta5.png" alt="some_text" width= 440px height="550"></a>
+    <p1 class="gt5"><a class="ctw" href="np2.html">Grand Theft Auto V</a></p1>
+  </div>
+  <div class="gam4">
+    <a class="cp4" href="np4.html"><img src="gta4npng.png" alt="some_text" width= 440px height="550"></a>
+    <p1 class="gt4"><a class="ctw" href="np2.html">Grand Theft Auto IV</a></p1>
+  </div>
+  <div class="gam3">
+    <a class="cp3" href="np2.html"><img src="gta3.jpg" alt="some_text" width= 440px height="550"></a>
+    <p1 class="gt3"><a class="ctw" href="np2.html">Grand Theft Auto III</a></p1>
+  </div>
+  <!-- <div class="gam2">
+    <a class="cp2" href="np2.html"><img src="gta2222.jpg" alt="some_text" width= 440px height="550"></a>
+    <p1 class="gt2"><a class="ctw" href="np2.html">Grand Theft Auto II</a></p1>
+
+  </div>
+  <div class="gam1">
+    <a class="cp1" href="np1.html"><img src="gta1.jpg" alt="some_text" width= 440px ></a>
+    <p1 class="gt1"><a class="ctw" href="np1.html">Grand Theft Auto I</a></p1>
+ 
+  </div> -->
+</div>
+
+
+<script>
+
+const menuButton = document.getElementById('menu-button');
+const navigation = document.getElementById('nav');
+
+menuButton.addEventListener('click', e => {
+  menuButton.classList.toggle('active');
+  navigation.classList.toggle('open');
+});
+</script>
+       
+</body>
+</html>

@@ -1,0 +1,614 @@
+
+body{
+    background: #fff;
+    
+}
+
+.wrapper{
+    width: 92.72727272727273%;
+    margin: 0 auto;
+}
+
+
+h1, h2, h3, h4, h5 ,h6{
+    color: #000000;
+    font-family: "raleway-regular", arial;
+    letter-spacing: 1px;
+}
+h1{ 
+    font-size: 2em;
+    margin: .67em 0 
+}
+
+/*  Header  */
+@media (min-width:1099px){
+    header{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        min-height: 100%;
+        padding: 0 0 0 50px;
+        background: #ffffff; 
+        float: left;
+        overflow: hidden;
+        z-index: 9999;
+    }
+
+    header .logo{
+        margin-top: 200px;
+        padding-right: 55px;
+        padding-left: -20px;
+        
+    }
+
+    header nav ul{
+        display: block;
+        overflow: hidden;
+        margin-top: 100px;
+        list-style: none;
+    }
+
+    header nav ul li{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    header nav ul li a{
+        color: #454545;
+        font-family: "raleway-regular", arial;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        
+    }
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    padding-left: 300px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 55;
+    background: #f6f6f6;
+    clear: both;
+}
+
+/* Home */
+.main .work{
+    display: block;
+    width: 33.33333333333333%;
+    height: auto;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .work .media{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.main .work .caption{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background: #ffffff;
+    opacity: 0;
+}
+.main .work a:hover .caption{
+    opacity: 1;
+}
+.work .caption .work_title{
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -40px;
+}
+
+.main .work .caption h1{
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    padding: 20px 0;
+    z-index: 77;
+    color: #454545;
+    font-family: "raleway-regular", arial;
+    font-size: 16px;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #bfbbbb;
+    border-top: 1px solid #bfbbbb;
+}
+
+/*  Inner Page  */
+.top{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../images/fish.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 60%;
+}
+
+.top2{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../images/dumpling.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 35%;
+}
+
+.top3{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../images/noodle.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 50%;
+}
+
+.top4{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../images/littleyear.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 100%;
+}
+
+.top5{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../images/springFestival.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 60%;
+}
+
+.top6{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../images/Lantern.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 80%;
+}
+
+.top7{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../images/qian.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 100%;
+}
+
+
+.work_nav .btn{
+    float: right;
+}
+
+
+.work_nav ul li{
+    display: block;
+    float: left;
+    margin: 0 0 1px 1px;
+    position: relative;
+}
+
+.work_nav a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('../images/p_navigation.png') no-repeat;
+    background-position: 0 0;
+}
+
+.work_nav a.previous{
+    background-position: 0 0;
+}
+
+.work_nav a.grid{
+    background-position: -41px 0;
+}
+
+.work_nav a.next{
+    background-position: -82px 0;
+}
+
+.top .title{ 
+    color:rgb(10, 10, 10);
+    font-size: 26px;
+    padding: 20px; 
+    text-transform: uppercase; 
+    margin: 0!important; 
+ }
+
+ .top2 .title{ 
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    padding: 20px; 
+    text-transform: uppercase; 
+    margin: 0!important; 
+ }
+ .top3 .title{ 
+    color: black;
+    font-size: 26px;
+    padding: 20px; 
+    text-transform: uppercase; 
+    margin: 0!important; 
+ }
+ .top4 .title{ 
+    color: black;
+    font-size: 26px;
+    padding: 20px; 
+    text-transform: uppercase; 
+    margin: 0!important; 
+ }
+ .top5 .title{ 
+    color: black;
+    font-size: 26px;
+    padding: 20px; 
+    text-transform: uppercase; 
+    margin: 0!important; 
+ }
+ .top6 .title{ 
+    color: black;
+    font-size: 26px;
+    padding: 20px; 
+    text-transform: uppercase; 
+    margin: 0!important; 
+ }
+
+
+
+.content_header{
+    color:black;
+    position: absolute;
+    bottom: 30px;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -46%;
+}
+
+.content{
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 60px 30px;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content2{
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 60px 30px;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content3{
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 60px 30px;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content4{
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 60px 30px;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content5 .iframe{
+    display: flex;
+    justify-content: center;
+}
+
+.content p{
+    
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content2 p{
+    
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content3 p{
+    
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content4 p{
+    
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content5 p{
+    
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content img{
+    margin: 100px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.content2 img{
+    margin: 100px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.content4 img{
+    margin: 100px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.content3 img{
+    margin: 100px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.content5 img{
+    margin: 100px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6{
+    color: black;
+    font-family: "raleway-semibold", arial;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content2 h1,
+.content2 h2,
+.content2 h3,
+.content2 h4,
+.content2 h5,
+.content2 h6{
+    color: black;
+    font-family: "raleway-semibold", arial;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content3 h1,
+.content3 h2,
+.content3 h3,
+.content3 h4,
+.content3 h5,
+.content3 h6{
+    color: black;
+    font-family: "raleway-semibold", arial;
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: -5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content4 h1,
+.content4 h2,
+.content4 h3,
+.content4 h4,
+.content4 h5,
+.content4 h6{
+    color: black;
+    font-family: "raleway-semibold", arial;
+    font-weight: bold;
+    line-height: 38px;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content5{
+    color: black;
+    font-family: "raleway-regular", arial;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 60px 30px;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content5 h1,
+.content5 h2,
+.content5 h3,
+.content5 h4,
+.content5 h5,
+.content5 h6{
+    color: black;
+    font-family: "raleway-semibold", arial;
+    font-weight: bold;
+    line-height: 38px;
+    margin-bottom: -1px;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*  Responsive code  */
+@media (max-width:1099px){
+
+        header{
+            display: block;
+            width: 100%;
+            min-height: 100px;
+            padding: 0;
+            position: relative;
+        }
+    header .logo{
+        display: flex;
+        height: auto;
+        max-width: 100%;
+        margin: 40px 0 0 30px;
+        float: left;
+        position: relative;
+    }
+        header nav{
+            width: 100%;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            z-index: 9999;
+        }
+
+    header nav ul{
+        list-style: none;
+        flex-direction: column;
+        text-align: end;
+        margin: 80px;
+        font-family: "raleway-regular", arial;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    header nav ul li a{
+        display: block;
+        width: 50%;
+        padding: 30px 30px;
+        flex-direction: column;
+        margin-left: 50%;
+        padding: 20px;
+        text-align: center;
+        color: #454545;
+        font-family: "raleway-regular", arial;
+        font-size: 14px;
+        text-decoration: none;
+        border-top: 0px 
+        
+    }
+    .main .work{
+        width: 50%;
+    }
+    .main{
+        width: 100%;
+        position: relative;
+        padding-left: 0;
+    }
+   
+}
+
